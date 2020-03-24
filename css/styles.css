@@ -6,7 +6,10 @@
   color: blue;
   cursor: pointer;
 }
-
+.clickable-a {
+  color: blue;
+  cursor: pointer;
+}
 .hidden {
   display: none;
 }
