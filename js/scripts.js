@@ -4,39 +4,39 @@ $(document).ready(function() {
     $(this).children("p").slideToggle();
   });
 
-  $("button#hello").click(function() {
-    $("ul#user").after("<li>Hello!</li>");
-    $("ul#webpage").after("<li>Why hello there!</li>");
+  $("button#meow").click(function() {
+    $("ul#cat").after("<li>Meow!!</li>");
+    $("ul#dog").after("<li>Woof!</li>");
     
-    $("ul#user").children("li").first().click(function(){
+    $("ul#cat").children("li").first().click(function(){
       $(this).remove();
     });
 
-    $("ul#webpage").children("li").first().click(function() {
+    $("ul#dog").children("li").first().click(function() {
       $(this).remove();
     });
   });
 
   $("button#goodbye").click(function() {
-    $("ul#user").before("<li>Goodbye!</li>");
-    $("ul#webpage").before("<li>Goodbye, dear user!</li>");
-    $("ul#user").children("li").first().click(function(){
+    $("ul#cat").prepend("<li>Goodbye!</li>");
+    $("ul#dog").prepend("<li>Goodbye, dear user!</li>");
+    $("ul#cat").children("li").first().click(function(){
       $(this).remove();
     });
 
-    $("ul#webpage").children("li").first().click(function() {
+    $("ul#dog").children("li").first().click(function() {
       $(this).remove();
     });
   });
 
-  $("button#stop").click(function() {
-    $("ul#user").append("<li>Stop copying me!</li>");
-    $("ul#webpage").append("<li>Pardon me. I meant no offense.</li>");
-    $("ul#user").children("li").first().click(function(){
+  $("button#woof").click(function() {
+    $("ul#cat").append("<li>Meow!</li>");
+    $("ul#dog").append("<li>Woof!</li>");
+    $("ul#cat").children("li").first().click(function(){
       $(this).remove();
     });
 
-    $("ul#webpage").children("li").first().click(function() {
+    $("ul#dog").children("li").first().click(function() {
       $(this).remove();
     });
   });
